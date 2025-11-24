@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "survivorsaquaculture:metal/unfinished/neptunium_helmet"
+  },
+  "second_input": {
+    "tag": "forge:sheets/neptunian_steel"
+  },
+  "tier": 6,
+  "result": {
+    "item": "aquaculture:neptunium_helmet"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "survivorsaquaculture:worm",
+  "conditions": [
+    {
+      "block": "tfc:crop/sugarcane",
+      "condition": "minecraft:block_state_property",
+      "properties": {
+        "age": "7"
+      }
+    },
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "tag": "minecraft:hoes"
+      }
+    },
+    {
+      "chance": 0.7,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "max": 3,
+  "min": 1
+}

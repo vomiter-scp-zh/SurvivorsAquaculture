@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "survivorsaquaculture:metal/unfinished/neptunium_chestplate"
+  },
+  "second_input": {
+    "tag": "forge:double_sheets/neptunian_steel"
+  },
+  "tier": 6,
+  "result": {
+    "item": "aquaculture:neptunium_chestplate"
+  }
+}

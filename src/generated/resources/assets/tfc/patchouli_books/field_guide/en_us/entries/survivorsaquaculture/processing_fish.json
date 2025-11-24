@@ -1,0 +1,33 @@
+{
+  "category": "tfc:survivors_aquaculture",
+  "extra_recipe_mappings": {
+    "aquaculture:fish_bones": 2,
+    "aquaculture:fish_fillet_raw": 1,
+    "survivorsaquaculture:neptunian_pearl": 3
+  },
+  "icon": "aquaculture:neptunium_fillet_knife",
+  "name": "Processing Fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Most raw fish in the Aquaculture mod cannot be eaten directly or cooked as-is. They need to be processed first before they can be used as proper ingredients, and obtaining $(thing)fish fillet$() is the essential first step."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aquaculture:fish_fillet_raw",
+      "text": "To get $(thing)fish fillet$(), simply place any type of $(thing)knife$() together with $(thing)raw fish$() in a shapeless recipe. This will yield $(thing)fish fillet$(), which can then be used in various cooking recipes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aquaculture:fish_bones",
+      "text": "Larger fish that produce more fillets will also yield more $(thing)fish bones$() when processed. Fish bones can be crafted into $(thing)bone meal$() for fertilizer, or used as ingredients in other recipes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivorsaquaculture:neptunian_pearl",
+      "text": "Big fish may also contain odd or unexpected items inside their bodies. Among these, the most valuable is the $(thing)Neptunian Pearl$(), an essential material used for forging $(thing)Neptunian Steel$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

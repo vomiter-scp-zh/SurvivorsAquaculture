@@ -1,0 +1,53 @@
+{
+  "_comment": "==== SurvivorsAquaculture — generated from registrations ====",
+
+  "item.survivorsaquaculture.neptunian_pearl": "Neptunian Pearl",
+
+  "item.survivorsaquaculture.bucket.metal.neptunium": "Bucket of Molten Neptunium",
+  "item.survivorsaquaculture.bucket.metal.neptunian_steel": "Bucket of Molten Neptunian Steel",
+
+  "item.survivorsaquaculture.metal.ingot.neptunium": "Neptunium Ingot",
+  "item.survivorsaquaculture.metal.double_ingot.neptunium": "Neptunium Double Ingot",
+  "item.survivorsaquaculture.metal.sheet.neptunium": "Neptunium Sheet",
+  "item.survivorsaquaculture.metal.double_sheet.neptunium": "Neptunium Double Sheet",
+  "item.survivorsaquaculture.metal.rod.neptunium": "Neptunium Rod",
+
+  "item.survivorsaquaculture.metal.ingot.neptunian_steel": "Neptunian Steel Ingot",
+  "item.survivorsaquaculture.metal.double_ingot.neptunian_steel": "Neptunian Steel Double Ingot",
+  "item.survivorsaquaculture.metal.sheet.neptunian_steel": "Neptunian Steel Sheet",
+  "item.survivorsaquaculture.metal.double_sheet.neptunian_steel": "Neptunian Steel Double Sheet",
+  "item.survivorsaquaculture.metal.rod.neptunian_steel": "Neptunian Steel Rod",
+
+  "item.survivorsaquaculture.metal.unfinished.neptunium_helmet": "Unfinished Neptunium Helmet",
+  "item.survivorsaquaculture.metal.unfinished.neptunium_chestplate": "Unfinished Neptunium Chestplate",
+  "item.survivorsaquaculture.metal.unfinished.neptunium_leggings": "Unfinished Neptunium Leggings",
+  "item.survivorsaquaculture.metal.unfinished.neptunium_boots": "Unfinished Neptunium Boots",
+
+  "block.survivorsaquaculture.metal.block.neptunium": "Neptunium Plated Block",
+  "block.survivorsaquaculture.metal.block.neptunian_steel": "Neptunian Steel Plated Block",
+
+  "block.survivorsaquaculture.metal.block.neptunium_slab": "Neptunium Plated Slab",
+  "block.survivorsaquaculture.metal.block.neptunian_steel_slab": "Neptunian Steel Plated Slab",
+
+  "block.survivorsaquaculture.metal.block.neptunium_stairs": "Neptunium Plated Stairs",
+  "block.survivorsaquaculture.metal.block.neptunian_steel_stairs": "Neptunian Steel Plated Stairs",
+
+  "block.survivorsaquaculture.metal.anvil.neptunium": "Neptunium Anvil",
+  "block.survivorsaquaculture.metal.anvil.neptunian_steel": "Neptunian Steel Anvil",
+
+  "block.survivorsaquaculture.metal.chain.neptunium": "Neptunium Chain",
+  "block.survivorsaquaculture.metal.chain.neptunian_steel": "Neptunian Steel Chain",
+
+  "block.survivorsaquaculture.metal.lantern.neptunium": "Neptunium Lantern",
+  "block.survivorsaquaculture.metal.lantern.neptunian_steel": "Neptunian Steel Lantern",
+
+  "block.survivorsaquaculture.fluid.metal.neptunium": "Molten Neptunium",
+  "block.survivorsaquaculture.fluid.metal.neptunian_steel": "Molten Neptunian Steel",
+
+  "fluid.survivorsaquaculture.metal.neptunium": "Neptunium",
+  "fluid.survivorsaquaculture.metal.neptunian_steel": "Neptunian Steel",
+  "fluid.tfc.metal.neptunium": "Neptunium",
+  "fluid.tfc.metal.neptunian_steel": "Neptunian Steel",
+  "metal.survivorsaquaculture.neptunium": "Neptunium",
+  "metal.survivorsaquaculture.neptunian_steel": "Neptunian Steel"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:stairs/neptunium"
+  },
+  "result_fluid": {
+    "fluid": "survivorsaquaculture:metal/neptunium",
+    "amount": 75
+  },
+  "temperature": 850
+}

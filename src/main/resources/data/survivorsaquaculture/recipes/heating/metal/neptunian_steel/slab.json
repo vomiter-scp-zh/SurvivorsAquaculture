@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:slabs/neptunian_steel"
+  },
+  "result_fluid": {
+    "fluid": "survivorsaquaculture:metal/neptunian_steel",
+    "amount": 50
+  },
+  "temperature": 1540
+}

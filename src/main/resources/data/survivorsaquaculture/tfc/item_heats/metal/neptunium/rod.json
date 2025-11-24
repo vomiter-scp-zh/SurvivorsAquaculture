@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "tag": "forge:rods/neptunium"
+  },
+  "heat_capacity": 1.429,
+  "forging_temperature": 510.0,
+  "welding_temperature": 680.0
+}

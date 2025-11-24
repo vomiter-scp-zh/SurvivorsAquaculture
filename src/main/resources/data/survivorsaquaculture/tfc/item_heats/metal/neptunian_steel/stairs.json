@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "tag": "forge:stairs/neptunian_steel"
+  },
+  "heat_capacity": 2.143,
+  "forging_temperature": 924.0,
+  "welding_temperature": 1232.0
+}

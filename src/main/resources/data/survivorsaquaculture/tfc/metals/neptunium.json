@@ -1,0 +1,15 @@
+{
+  "tier": 2,
+  "fluid": "survivorsaquaculture:metal/neptunium",
+  "melt_temperature": 850,
+  "specific_heat_capacity": 0.00857,
+  "ingots": {
+    "tag": "forge:ingots/neptunium"
+  },
+  "double_ingots": {
+    "tag": "forge:double_ingots/neptunium"
+  },
+  "sheets": {
+    "tag": "forge:sheets/neptunium"
+  }
+}

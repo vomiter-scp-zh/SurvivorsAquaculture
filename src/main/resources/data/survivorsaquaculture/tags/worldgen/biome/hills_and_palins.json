@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tfc:hills",
+    "tfc:plains",
+    "#tfc:is_river",
+    "#tfc:is_lake"
+  ]
+}

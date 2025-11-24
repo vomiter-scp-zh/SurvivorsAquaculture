@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:double_ingots/neptunium"
+  },
+  "tier": 2,
+  "rules": [
+    "DRAW_NOT_LAST",
+    "HIT_SECOND_LAST",
+    "HIT_LAST"
+  ],
+  "result": {
+    "item": "survivorsaquaculture:metal/sheet/neptunium"
+  },
+  "apply_forging_bonus": true
+}

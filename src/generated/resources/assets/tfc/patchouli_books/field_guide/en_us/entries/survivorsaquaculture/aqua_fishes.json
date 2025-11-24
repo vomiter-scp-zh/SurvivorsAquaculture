@@ -1,0 +1,34 @@
+{
+  "category": "tfc:survivors_aquaculture",
+  "extra_recipe_mappings": {},
+  "icon": "aquaculture:atlantic_cod",
+  "name": "More Fishes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Aquaculture fish now follow TFC's climate rules. Each species has preferred water types, temperature ranges, and rainfall conditions. Fish yielding over $(thing)8 fillets$() are large fish and must be caught using large fishing bait."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Cold-sea species such as $(thing)Atlantic Cod, Blackfish, Halibut, Herring, Salmon, Pollock, Rainbow Trout$() spawn in oceans at $(thing)≤0°C$() with rainfall $(thing)≥75$() . Many of these fish are larger and yield more fillets."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saltwater species such as $(thing)Jellyfish, Red Grouper, Tuna$() require salt water and temperatures of at least $(thing)0°C$() . $(thing)Tuna$() is especially large and must be caught using large fishing bait."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Freshwater fish such as $(thing)Smallmouth Bass, Bluegill, Brown Trout, Carp, Catfish, Gar, Minnow, Muskellunge, Perch$() spawn in fresh water at $(thing)0–20°C$() with no rainfall limits."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Arid-region fish such as $(thing)Bayad, Boulti, Capitaine, Synodontis$() prefer temperatures of $(thing)≥13°C$() and rainfall up to $(thing)300$() . They are common in warm, dry rivers."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Jungle species including $(thing)Arapaima, Piranha, Tambaqui, Arrau Turtle$() require dense jungle environments with temperatures of $(thing)15–30°C$() and rainfall $(thing)≥300$() . $(thing)Arapaima$() is a massive fish and must be caught using large fishing bait."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

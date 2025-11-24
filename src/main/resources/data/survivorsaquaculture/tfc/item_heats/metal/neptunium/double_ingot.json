@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "tag": "forge:double_ingots/neptunium"
+  },
+  "heat_capacity": 5.714,
+  "forging_temperature": 510.0,
+  "welding_temperature": 680.0
+}

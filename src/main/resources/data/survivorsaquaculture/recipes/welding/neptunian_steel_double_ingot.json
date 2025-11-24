@@ -1,0 +1,13 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:ingots/neptunian_steel"
+  },
+  "second_input": {
+    "tag": "forge:ingots/neptunian_steel"
+  },
+  "tier": 5,
+  "result": {
+    "item": "survivorsaquaculture:metal/double_ingot/neptunian_steel"
+  }
+}

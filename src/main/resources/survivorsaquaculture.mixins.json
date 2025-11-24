@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.vomiter.survivorsaquaculture.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "RecipeManagerAccessor",
+    "fish.Item_PreventEatingFish",
+    "fish.goal.AquaFishEntity_AddTFCHookGoal",
+    "fish.goal.GetHookedGoal_SetAquaFishLarge",
+    "fish.goal.MoveToBlockGoal_Accessor",
+    "fish.size.Entity_FishDimension",
+    "fish.size.LivingEntity_FishEyeHeight",
+    "fish.spawn.AquaFishEntity_SpawnCondition",
+    "neptunium.AquaArmorMaterials_DurabilityMixin",
+    "neptunium.NeptuniumArmor_EffectMixin",
+    "recipe.FishFilletRecipe_ApplyFoodTraits",
+    "recipe.ResultSlot_FilletBonusMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "survivorsaquaculture.mixins.refmap.json"
+}

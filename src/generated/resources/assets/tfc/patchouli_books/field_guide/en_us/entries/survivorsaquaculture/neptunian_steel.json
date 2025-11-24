@@ -1,0 +1,50 @@
+{
+  "category": "tfc:survivors_aquaculture",
+  "extra_recipe_mappings": {
+    "survivorsaquaculture:metal/ingot/neptunian_steel": 3,
+    "survivorsaquaculture:metal/ingot/neptunium": 3
+  },
+  "icon": "survivorsaquaculture:metal/block/neptunian_steel",
+  "name": "Neptunian Steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "You can use $(thing)Neptunian Steel$() to craft equipment designed specifically for aquatic environments."
+    },
+    {
+      "type": "tfc:welding_recipe",
+      "recipe": "survivorsaquaculture:welding/neptunian_steel_ingot",
+      "text": "$(thing)Neptunian Steel Ingot$() is created by welding $(thing)Neptunium ingot$() and $(thing)Black Steel ingot$() together, making it a highly advanced metal material."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aquaculture:neptunium_chestplate",
+      "text": "Every tool or piece of equipment made from $(thing)Neptunian Steel$() clearly lists its effects in the item tooltip, allowing you to check their functions directly from the item description."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Aside from equipment, both $(thing)Neptunium$() and $(thing)Neptunian Steel$() can also be processed into blocks, stairs, and slabs, making it easy to maintain a consistent style in water-themed constructions."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "survivorsaquaculture:metal/block/neptunium"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

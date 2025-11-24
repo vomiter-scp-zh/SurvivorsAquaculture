@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:rods/neptunium"
+  },
+  "result_fluid": {
+    "fluid": "survivorsaquaculture:metal/neptunium",
+    "amount": 50
+  },
+  "temperature": 850
+}

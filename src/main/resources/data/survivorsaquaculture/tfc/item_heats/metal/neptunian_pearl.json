@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "item": "survivorsaquaculture:neptunian_pearl"
+  },
+  "heat_capacity": 1,
+  "forging_temperature": 510.0,
+  "welding_temperature": 680.0
+}

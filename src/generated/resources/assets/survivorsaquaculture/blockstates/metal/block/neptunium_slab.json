@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "survivorsaquaculture:block/metal/block/neptunium_slab"
+    },
+    "type=double": {
+      "model": "survivorsaquaculture:block/metal/block/neptunium"
+    },
+    "type=top": {
+      "model": "survivorsaquaculture:block/metal/block/neptunium_slab_top"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:double_sheets/neptunian_steel"
+  },
+  "tier": 6,
+  "rules": [
+    "SHRINK_THIRD_LAST",
+    "BEND_SECOND_LAST",
+    "HIT_LAST"
+  ],
+  "result": {
+    "item": "survivorsaquaculture:metal/unfinished/neptunium_chestplate"
+  },
+  "apply_forging_bonus": true
+}
