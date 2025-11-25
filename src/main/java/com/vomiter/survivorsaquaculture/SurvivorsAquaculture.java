@@ -9,9 +9,10 @@ import com.vomiter.survivorsaquaculture.data.SAquaItemTags;
 import com.vomiter.survivorsaquaculture.core.fish.size.RenderFishSize;
 import com.vomiter.survivorsaquaculture.data.SAquaSimpleMetalBlockStates;
 import com.vomiter.survivorsaquaculture.data.book.content.BookEN;
-import com.vomiter.survivorsaquaculture.data.loot.ModLootModifierProvider;
-import com.vomiter.survivorsaquaculture.data.loot.ModLootModifiers;
-import net.dries007.tfc.util.Metal;
+import com.vomiter.survivorsaquaculture.data.loot.SAquaCropLootModifierProvider;
+import com.vomiter.survivorsaquaculture.data.loot.SAquaFilletLootTableProvider;
+import com.vomiter.survivorsaquaculture.data.loot.SAquaLootModifiers;
+import com.vomiter.survivorsaquaculture.data.size.SAquaSizeProvider;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -24,12 +25,7 @@ import org.slf4j.Logger;
 @Mod(SurvivorsAquaculture.MODID)
 public class SurvivorsAquaculture
 {
-
-    //TODO: change stack of fishes
-    //TODO: add salt water to effect criteria
-    //TODO: add aqua fish in neptune vision highlight
-    //TODO: add looting for skillet processing
-    //TODO: make bottle letter give back a bottle and a paper in certain chance
+    //TODO: FISH MOUNT -> cancel name tag drawing, use overlay
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "survivorsaquaculture";
@@ -45,13 +41,16 @@ public class SurvivorsAquaculture
         SAquaFluids.FLUID_TYPES.register(modBus);
         SAquaFluids.FLUIDS.register(modBus);
         SAquaBlocks.register(modBus);
-        ModLootModifiers.LOOT_MODIFIERS.register(modBus);
+        SAquaLootModifiers.LOOT_MODIFIERS.register(modBus);
 
         modBus.addListener(SAquaCreativeTabCompat::onBuildCreativeTab);
         modBus.addListener(SAquaEntityTypeTags::gatherData);
         modBus.addListener(SAquaItemTags::gatherData);
         modBus.addListener(SAquaSimpleMetalBlockStates::gatherData);
-        modBus.addListener(ModLootModifierProvider::gatherData);
+        modBus.addListener(SAquaCropLootModifierProvider::gatherData);
+        modBus.addListener(SAquaFilletLootTableProvider::gatherData);
+        modBus.addListener(SAquaSizeProvider::gatherData);
+
         modBus.addListener(BookEN::generate);
         if(FMLEnvironment.dist.isClient()){
             MinecraftForge.EVENT_BUS.addListener(RenderFishSize::onRenderLivingPre);

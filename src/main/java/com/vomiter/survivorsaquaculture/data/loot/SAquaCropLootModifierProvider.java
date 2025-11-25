@@ -20,15 +20,15 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Supplier;
 
-public class ModLootModifierProvider extends GlobalLootModifierProvider {
+public class SAquaCropLootModifierProvider extends GlobalLootModifierProvider {
     public static void gatherData(GatherDataEvent event){
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
-        generator.addProvider(event.includeServer(), new ModLootModifierProvider(output));
+        generator.addProvider(event.includeServer(), new SAquaCropLootModifierProvider(output));
     }
 
 
-    public ModLootModifierProvider(PackOutput output) {
+    public SAquaCropLootModifierProvider(PackOutput output) {
         super(output, SurvivorsAquaculture.MODID);
     }
 

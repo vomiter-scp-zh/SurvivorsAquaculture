@@ -12,6 +12,7 @@
     "fish.size.Entity_FishDimension",
     "fish.size.LivingEntity_FishEyeHeight",
     "fish.spawn.AquaFishEntity_SpawnCondition",
+    "misc.ItemMessageInABottle_Mixin",
     "neptunium.AquaArmorMaterials_DurabilityMixin",
     "neptunium.NeptuniumArmor_EffectMixin",
     "recipe.FishFilletRecipe_ApplyFoodTraits",

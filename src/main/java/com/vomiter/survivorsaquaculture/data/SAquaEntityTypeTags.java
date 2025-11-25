@@ -1,6 +1,9 @@
 package com.vomiter.survivorsaquaculture.data;
 
 import com.teammetallurgy.aquaculture.init.FishRegistry;
+import com.vomiter.survivorsabilities.core.SAEffects;
+import com.vomiter.survivorsabilities.core.effect.SenseEffect;
+import com.vomiter.survivorsabilities.data.SAEntityTypeTags;
 import com.vomiter.survivorsaquaculture.SurvivorsAquaculture;
 import com.vomiter.survivorsaquaculture.core.fish.AquaFishes;
 import net.dries007.tfc.common.TFCTags;
@@ -131,6 +134,16 @@ public class SAquaEntityTypeTags extends EntityTypeTagsProvider {
         addByList(MUSHROOM_ISLAND_FISH, MUSHROOM_ISLAND_FISH_LIST);
         addByList(TWILIGHT_FOREST_FISH, TWILIGHT_FOREST_FISH_LIST);
         addByList(ANYWHERE_FISH, ANYWHERE_FISH_LIST);
+
+        for (AquaFishes fish : AquaFishes.values()) {
+            if(fish.getFilletAmount() < 7){
+                fish.entityType().ifPresent(e -> tag(SenseEffect.getTargetTag(SenseEffect.SenseType.NEPTUNE, SenseEffect.GlowColor.WHITE)).add(e));
+            }
+            else {
+                fish.entityType().ifPresent(e -> tag(SenseEffect.getTargetTag(SenseEffect.SenseType.NEPTUNE, SenseEffect.GlowColor.YELLOW)).add(e));
+            }
+
+        }
 
         FishRegistry.fishEntities.forEach(ro -> {
         });

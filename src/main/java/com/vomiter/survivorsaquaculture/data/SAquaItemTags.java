@@ -67,7 +67,9 @@ public class SAquaItemTags extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
         tag(TFCTags.Items.LARGE_FISHING_BAIT)
-                .add(AquaItems.WORM.get());
+                .add(AquaItems.WORM.get())
+                .add(AquaItems.MINNOW.get())
+                .add(AquaItems.BLUEGILL.get());
 
         FishRegistry.fishEntities.forEach(ro -> {
             tag(AQUA_FISH).add(

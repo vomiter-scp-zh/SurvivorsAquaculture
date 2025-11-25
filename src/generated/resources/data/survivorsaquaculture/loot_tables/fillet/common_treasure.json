@@ -1,0 +1,140 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_native_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_native_gold"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_hematite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_native_silver"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_cassiterite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_bismuthinite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_garnierite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_malachite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_magnetite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_limonite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_sphalerite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/normal_tetrahedrite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/bituminous_coal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/lignite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/gypsum"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/graphite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/sulfur"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/cinnabar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/cryolite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/saltpeter"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/sylvite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/borax"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/halite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/amethyst"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/lapis_lazuli"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/opal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/pyrite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/ruby"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/sapphire"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/topaz"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "survivorsaquaculture:fillet/common_treasure"
+}

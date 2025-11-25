@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_native_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_native_gold"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_hematite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_native_silver"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_cassiterite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_bismuthinite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_garnierite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_malachite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_magnetite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_limonite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_sphalerite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_tetrahedrite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "aquaculture:tin_can"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "aquaculture:message_in_a_bottle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:plant/giant_kelp_flower"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:groundcover/driftwood"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "survivorsaquaculture:fillet/common_junk"
+}
