@@ -1,7 +1,7 @@
 package com.vomiter.survivorsaquaculture.mixin.fish;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import com.vomiter.survivorsaquaculture.data.SAquaItemTags;
+import com.vomiter.survivorsaquaculture.data.tag.SAquaItemTags;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import net.minecraft.world.item.Item;

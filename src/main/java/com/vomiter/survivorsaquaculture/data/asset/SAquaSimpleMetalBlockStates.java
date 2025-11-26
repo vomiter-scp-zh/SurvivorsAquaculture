@@ -1,4 +1,4 @@
-package com.vomiter.survivorsaquaculture.data;
+package com.vomiter.survivorsaquaculture.data.asset;
 
 import com.vomiter.survivorsaquaculture.SurvivorsAquaculture;
 import com.vomiter.survivorsaquaculture.core.registry.SAquaBlocks;
@@ -24,24 +24,24 @@ public class SAquaSimpleMetalBlockStates extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        SAquaBlocks.METAL.forEach((metal, typeMap) -> {
-            typeMap.forEach((blockType, regObj) -> {
-                if (blockType != Metal.BlockType.BLOCK
-                        && blockType != Metal.BlockType.BLOCK_SLAB
-                        && blockType != Metal.BlockType.BLOCK_STAIRS) return;
+        SAquaBlocks.METAL.forEach(
+                (metal, typeMap)
+                        -> typeMap.forEach((blockType, regObj) -> {
+            if (blockType != Metal.BlockType.BLOCK
+                    && blockType != Metal.BlockType.BLOCK_SLAB
+                    && blockType != Metal.BlockType.BLOCK_STAIRS) return;
 
-                Block block = regObj.get();
-                String name = key(block);
-                ResourceLocation fullTex = tex("block", metal);
+            Block block = regObj.get();
+            String name = key(block);
+            ResourceLocation fullTex = tex("block", metal);
 
-                switch (blockType) {
-                    case BLOCK -> genFullBlock(name, block, fullTex);
-                    case BLOCK_SLAB -> genSlab(name, (SlabBlock) block, fullTex);
-                    case BLOCK_STAIRS -> genStairs(name, (StairBlock) block, fullTex);
-                    default -> {}
-                }
-            });
-        });
+            switch (blockType) {
+                case BLOCK -> genFullBlock(name, block, fullTex);
+                case BLOCK_SLAB -> genSlab(name, (SlabBlock) block, fullTex);
+                case BLOCK_STAIRS -> genStairs(name, (StairBlock) block, fullTex);
+                default -> {}
+            }
+        }));
     }
 
     /* ---------- helpers ---------- */

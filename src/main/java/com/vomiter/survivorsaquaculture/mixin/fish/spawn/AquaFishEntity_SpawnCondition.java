@@ -2,7 +2,7 @@ package com.vomiter.survivorsaquaculture.mixin.fish.spawn;
 
 import com.teammetallurgy.aquaculture.entity.AquaFishEntity;
 import com.vomiter.survivorsaquaculture.core.fish.spawn_condition.SAquaClimate;
-import com.vomiter.survivorsaquaculture.data.SAquaEntityTypeTags;
+import com.vomiter.survivorsaquaculture.data.tag.SAquaEntityTypeTags;
 import net.dries007.tfc.common.TFCTags;
 import net.dries007.tfc.common.entities.EntityHelpers;
 import net.dries007.tfc.util.climate.OverworldClimateModel;

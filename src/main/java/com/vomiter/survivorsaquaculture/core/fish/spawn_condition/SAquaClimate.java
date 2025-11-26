@@ -1,6 +1,6 @@
 package com.vomiter.survivorsaquaculture.core.fish.spawn_condition;
 
-import com.vomiter.survivorsaquaculture.data.SAquaEntityTypeTags;
+import com.vomiter.survivorsaquaculture.data.tag.SAquaEntityTypeTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 

@@ -1,4 +1,4 @@
-package com.vomiter.survivorsaquaculture.data;
+package com.vomiter.survivorsaquaculture.data.tag;
 
 import com.teammetallurgy.aquaculture.init.AquaItems;
 import com.teammetallurgy.aquaculture.init.FishRegistry;
@@ -6,6 +6,8 @@ import com.vomiter.survivorsaquaculture.SurvivorsAquaculture;
 import com.vomiter.survivorsaquaculture.core.registry.SAquaItems;
 import com.vomiter.survivorsaquaculture.core.registry.TFCMetalNeptunium;
 import net.dries007.tfc.common.TFCTags;
+import net.dries007.tfc.common.items.TFCItems;
+import net.dries007.tfc.util.Metal;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
@@ -49,6 +51,7 @@ public class SAquaItemTags extends ItemTagsProvider {
 
 
     public static final TagKey<Item> AQUA_FISH = create("aquafish");
+    public static final TagKey<Item> FISH_HOOKS = create("fishing_hooks");
     public static final Map<TFCMetalNeptunium, Map<TFCMetalNeptunium.ItemType, TagKey<Item>>> METAL_ITEM_FORGE = new EnumMap<>(TFCMetalNeptunium.class);
     public static final Map<TFCMetalNeptunium, TagKey<Item>> METAL_ITEM_TFC = new EnumMap<>(TFCMetalNeptunium.class);
 
@@ -66,6 +69,13 @@ public class SAquaItemTags extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
+        for (Metal.Default metal : Metal.Default.values()) {
+            if(metal.hasTools()) {
+                var fishHook = TFCItems.METAL_ITEMS.get(metal).get(Metal.ItemType.FISH_HOOK).get();
+                tag(FISH_HOOKS).add(fishHook);
+            }
+        }
+
         tag(TFCTags.Items.LARGE_FISHING_BAIT)
                 .add(AquaItems.WORM.get())
                 .add(AquaItems.MINNOW.get())
@@ -106,12 +116,7 @@ public class SAquaItemTags extends ItemTagsProvider {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         ExistingFileHelper helper = event.getExistingFileHelper();
         CompletableFuture<TagsProvider.TagLookup<Block>> emptyBlockLookup =
-                CompletableFuture.completedFuture(new TagsProvider.TagLookup<Block>() {
-                    @Override
-                    public Optional<TagBuilder> apply(TagKey<Block> blockTagKey) {
-                        return Optional.empty();
-                    }
-                });
+                CompletableFuture.completedFuture(blockTagKey -> Optional.empty());
 
         generator.addProvider(event.includeServer(), new SAquaItemTags(output, lookupProvider, emptyBlockLookup, helper));
     }

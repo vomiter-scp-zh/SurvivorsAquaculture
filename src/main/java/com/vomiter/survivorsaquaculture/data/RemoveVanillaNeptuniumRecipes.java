@@ -1,6 +1,7 @@
-package com.vomiter.survivorsaquaculture;
+package com.vomiter.survivorsaquaculture.data;
 
 import com.teammetallurgy.aquaculture.Aquaculture;
+import com.vomiter.survivorsaquaculture.SurvivorsAquaculture;
 import com.vomiter.survivorsaquaculture.mixin.RecipeManagerAccessor;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener;

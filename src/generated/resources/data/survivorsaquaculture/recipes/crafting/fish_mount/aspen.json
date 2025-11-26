@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tfc:wood/lumber/aspen"
+    },
+    "H": {
+      "tag": "survivorsaquaculture:fishing_hooks"
+    }
+  },
+  "pattern": [
+    "BHB",
+    "BBB"
+  ],
+  "result": {
+    "item": "survivorsaquaculture:fish_mount/aspen"
+  },
+  "show_notification": true
+}

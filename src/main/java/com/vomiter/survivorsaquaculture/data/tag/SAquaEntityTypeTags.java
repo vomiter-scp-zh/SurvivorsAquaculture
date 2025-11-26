@@ -1,12 +1,9 @@
-package com.vomiter.survivorsaquaculture.data;
+package com.vomiter.survivorsaquaculture.data.tag;
 
 import com.teammetallurgy.aquaculture.init.FishRegistry;
-import com.vomiter.survivorsabilities.core.SAEffects;
 import com.vomiter.survivorsabilities.core.effect.SenseEffect;
-import com.vomiter.survivorsabilities.data.SAEntityTypeTags;
 import com.vomiter.survivorsaquaculture.SurvivorsAquaculture;
 import com.vomiter.survivorsaquaculture.core.fish.AquaFishes;
-import net.dries007.tfc.common.TFCTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
