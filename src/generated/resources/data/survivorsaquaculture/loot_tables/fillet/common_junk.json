@@ -6,51 +6,51 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_native_copper"
+          "name": "tfc:ore/small_native_copper"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_native_gold"
+          "name": "tfc:ore/small_native_gold"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_hematite"
+          "name": "tfc:ore/small_hematite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_native_silver"
+          "name": "tfc:ore/small_native_silver"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_cassiterite"
+          "name": "tfc:ore/small_cassiterite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_bismuthinite"
+          "name": "tfc:ore/small_bismuthinite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_garnierite"
+          "name": "tfc:ore/small_garnierite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_malachite"
+          "name": "tfc:ore/small_malachite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_magnetite"
+          "name": "tfc:ore/small_magnetite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_limonite"
+          "name": "tfc:ore/small_limonite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_sphalerite"
+          "name": "tfc:ore/small_sphalerite"
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:ore/poor_tetrahedrite"
+          "name": "tfc:ore/small_tetrahedrite"
         },
         {
           "type": "minecraft:item",

@@ -17,7 +17,10 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.AlternativesEntry;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
 import net.minecraft.world.level.storage.loot.entries.LootTableReference;
+import net.minecraft.world.level.storage.loot.functions.CopyBlockState;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
@@ -94,7 +97,7 @@ public class SAquaFilletLootTableProvider extends LootTableProvider {
             LootPool.Builder pool = LootPool.lootPool();
             pool.setRolls(ConstantValue.exactly(1f));
             for (Ore ore: Ore.values()) {
-                if(ore.isGraded()) pool.add(LootItem.lootTableItem(TFCItems.GRADED_ORES.get(ore).get(Ore.Grade.POOR).get()));
+                if(ore.isGraded()) pool.add(LootItem.lootTableItem(TFCBlocks.SMALL_ORES.get(ore).get()));
             }
 
             pool.add(LootItem.lootTableItem(AquaItems.TIN_CAN.get()));
@@ -110,23 +113,34 @@ public class SAquaFilletLootTableProvider extends LootTableProvider {
 
             // ====== 基本魚骨 ======
             if (fillets < 7) {
-                // fillet < 7：1~2 魚骨
+                // fillet < 7：0~2 魚骨
                 table.withPool(
                         LootPool.lootPool()
-                                .setRolls(UniformGenerator.between(0.0F, 2.0F))
-                                .add(LootItem.lootTableItem(AquaItems.FISH_BONES.get()))
+                                .setRolls(ConstantValue.exactly(1.0F))
+                                .add(
+                                        LootItem.lootTableItem(AquaItems.FISH_BONES.get())
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(0, 2)))
+                                )
                 );
             } else {
                 // fillet >= 7：2~4 魚骨
                 table.withPool(
                         LootPool.lootPool()
-                                .setRolls(UniformGenerator.between(2.0F, 4.0F))
-                                .add(LootItem.lootTableItem(AquaItems.FISH_BONES.get()))
+                                .setRolls(ConstantValue.exactly(1.0F))
+                                .add(
+                                        LootItem.lootTableItem(AquaItems.FISH_BONES.get())
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 4)))
+                                )
+                                .add(
+                                        LootItem.lootTableItem(TFCItems.BLUBBER.get())
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between((float) 0, (float) Math.ceil(fillets/6f))))
+                                )
                 );
 
                 // ====== 珍珠／寶物 ======
                 // 30 - count / 30 的機率給一個珍珠
                 float pearlChance = fillets / 30.0f;
+                pearlChance = Math.round(pearlChance * 100f) / 100f;
                 if (pearlChance < 0f) pearlChance = 0f;
                 if (pearlChance > 1f) pearlChance = 1f;
 

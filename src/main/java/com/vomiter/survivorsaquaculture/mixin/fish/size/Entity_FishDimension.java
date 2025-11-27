@@ -1,5 +1,6 @@
 package com.vomiter.survivorsaquaculture.mixin.fish.size;
 
+import com.vomiter.survivorsaquaculture.SAquaConfig;
 import com.vomiter.survivorsaquaculture.core.fish.AquaFishes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityDimensions;
@@ -13,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class Entity_FishDimension {
     @Inject(method = "getDimensions", at = @At("RETURN"), cancellable = true)
     private void scaleDimensions(Pose p_19975_, CallbackInfoReturnable<EntityDimensions> cir) {
+        if(!SAquaConfig.COMMON.ADJUST_FISH_SIZE.get()) return;
         Entity self = (Entity)(Object)this;
         AquaFishes.byEntityType(self.getType()).ifPresent(f -> {
             float s = f.getSizeScale();

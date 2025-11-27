@@ -20,7 +20,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "aquaculture:fish_bones",
-      "text": "Larger fish that produce more fillets will also yield more $(thing)fish bones$() when processed. Fish bones can be crafted into $(thing)bone meal$() for fertilizer, or used as ingredients in other recipes."
+      "text": "Larger fish that produce more fillets also yield more $(thing)fish bones$() when processed. Fish bones can be crafted into $(thing)bone meal$() for fertilizer, or used as ingredients in other recipes. Large fish might also be fatty enough to provide $(thing)blubber$() as well."
     },
     {
       "type": "patchouli:spotlight",

@@ -76,8 +76,10 @@ public class SAquaItemTags extends ItemTagsProvider {
             }
         }
 
+        tag(TFCTags.Items.SMALL_FISHING_BAIT)
+                .add(AquaItems.WORM.get());
+
         tag(TFCTags.Items.LARGE_FISHING_BAIT)
-                .add(AquaItems.WORM.get())
                 .add(AquaItems.MINNOW.get())
                 .add(AquaItems.BLUEGILL.get());
 

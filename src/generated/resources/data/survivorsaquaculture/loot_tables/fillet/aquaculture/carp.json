@@ -6,14 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "aquaculture:fish_bones"
         }
       ],
-      "rolls": {
-        "type": "minecraft:uniform",
-        "max": 2.0,
-        "min": 0.0
-      }
+      "rolls": 1.0
     }
   ],
   "random_sequence": "survivorsaquaculture:fillet/aquaculture/carp"

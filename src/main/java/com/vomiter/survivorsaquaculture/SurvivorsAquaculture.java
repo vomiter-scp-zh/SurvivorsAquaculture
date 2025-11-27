@@ -28,6 +28,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
@@ -38,8 +39,6 @@ import org.slf4j.Logger;
 @Mod(SurvivorsAquaculture.MODID)
 public class SurvivorsAquaculture
 {
-    //TODO: FISH MOUNT -> cancel name tag drawing, use overlay
-
     // Define mod id in a common place for everything to reference
     public static final String MODID = "survivorsaquaculture";
     // Directly reference a slf4j logger
@@ -49,6 +48,9 @@ public class SurvivorsAquaculture
 
     public SurvivorsAquaculture(FMLJavaModLoadingContext context)
     {
+        context.registerConfig(ModConfig.Type.COMMON, SAquaConfig.COMMON_SPEC);
+
+
         IEventBus modBus = context.getModEventBus();
         SAquaItems.ITEMS.register(modBus);
         SAquaFluids.FLUID_TYPES.register(modBus);

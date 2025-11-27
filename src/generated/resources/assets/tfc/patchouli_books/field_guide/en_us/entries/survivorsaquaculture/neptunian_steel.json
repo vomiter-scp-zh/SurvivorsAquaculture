@@ -19,7 +19,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "aquaculture:neptunium_chestplate",
-      "text": "Every tool or piece of equipment made from $(thing)Neptunian Steel$() clearly lists its effects in the item tooltip, allowing you to check their functions directly from the item description."
+      "text": "Every tool or piece of equipment made from $(thing)Neptunian Steel$() lists its effects in the item tooltip, allowing you to check their functions directly from the item description."
     },
     {
       "type": "patchouli:text",

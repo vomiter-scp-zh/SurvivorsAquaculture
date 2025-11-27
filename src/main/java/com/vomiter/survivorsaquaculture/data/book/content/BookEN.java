@@ -140,12 +140,15 @@ public final class BookEN {
                 .append(", which can then be used in various cooking recipes.");
 
         TextBuilder text2_3 = TextBuilder.create()
-                .text("Larger fish that produce more fillets will also yield more ")
+                .text("Larger fish that produce more fillets also yield more ")
                 .thing("fish bones")
                 .append(" when processed.")
                 .appendWithSpace("Fish bones can be crafted into ")
                 .thing("bone meal")
-                .append(" for fertilizer, or used as ingredients in other recipes.");
+                .append(" for fertilizer, or used as ingredients in other recipes.")
+                .append(" Large fish might also be fatty enough to provide ")
+                .thing("blubber")
+                .append(" as well.");
 
         TextBuilder text2_4 = TextBuilder.create()
                 .text("Big fish may also contain odd or unexpected items inside their bodies.")
@@ -201,7 +204,7 @@ public final class BookEN {
         TextBuilder text3_3 = TextBuilder.create()
                 .text("Every tool or piece of equipment made from")
                 .appendWithSpace(nameNeptunianSteel)
-                .appendWithSpace("clearly lists its effects in the item tooltip,")
+                .appendWithSpace("lists its effects in the item tooltip,")
                 .appendWithSpace("allowing you to check their functions directly from the item description.");
 
         // Paragraph 4
